@@ -1,14 +1,14 @@
-# react-native-country-picker-modal
+# react-native-slack-webhook
 
-[![npm version](http://img.shields.io/npm/dm/react-native-country-picker-modal.svg?style=flat-square)](https://npmjs.org/package/react-native-country-picker-modal "View this project on npm")
+[![npm version](http://img.shields.io/npm/dm/react-native-slack-webhook.svg?style=flat-square)](https://npmjs.org/package/react-native-slack-webhook "View this project on npm")
 
-The best Country Picker for React Native.
+The best Slack bot for React Native.
 
 ![](http://i.imgur.com/WF4sdT7.gif)
 
 ### Installation
 ```bash
-$ npm i react-native-country-picker-modal --save
+$ npm i react-native-slack-webhook --save
 ```
 ### Basic Usage
 - Install `react-native` first
@@ -37,15 +37,12 @@ import React, {
   PixelRatio
 } from 'react-native';
 
-import CountryPicker from 'react-native-country-picker-modal';
+import Slack from 'react-native-slack-webhook';
 
 class Example extends Component {
   constructor(props){
     StatusBarIOS.setHidden(true);
     super(props);
-    this.state = {
-      cca2: 'US'
-    };
   }
   render() {
     return (
@@ -53,19 +50,9 @@ class Example extends Component {
         <Text style={styles.welcome}>
           Welcome to Country Picker !
         </Text>
-        <CountryPicker
-          onChange={(value)=> this.setState({country: value})}
-          cca2={this.state.cca2}
-          translation='eng'
-        />
         <Text style={styles.instructions}>
-          press on the flag
+          Press to send test message
         </Text>
-        {this.state.country &&
-          <Text style={styles.data}>
-            {JSON.stringify(this.state.country, null, 2)}
-          </Text>
-        }
       </View>
     );
   }
@@ -87,14 +74,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#888',
     marginBottom: 5,
-  },
-  data: {
-    padding: 15,
-    marginTop: 10,
-    backgroundColor: '#ddd',
-    borderColor: '#888',
-    borderWidth: 1 / PixelRatio.get(),
-    color: '#777'
   }
 });
 
@@ -107,6 +86,6 @@ AppRegistry.registerComponent('example', () => Example);
 
 ## Questions
 
-Feel free to [contact me](mailto:contact@xaviercarpentier.com) or [create an issue](https://github.com/xcarpentier/react-native-country-picker/issues/new)
+Feel free to [contact me](mailto:contact@xaviercarpentier.com) or [create an issue](https://github.com/xcarpentier/react-native-slack-webhook/issues/new)
 
 > made with ♥
