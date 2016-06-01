@@ -1,0 +1,23 @@
+{
+  "name": "react-native-slack-webhook",
+  "version": "0.0.1",
+  "description": "Follow some activities (new user, payment, ...) from your app via Slack and this webhook lib ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcarpentier/react-native-slack-webhook.git"
+  },
+  "keywords": [
+    "Slack",
+    "react-native"
+  ],
+  "author": "Xavier Carpentier <contact@xaviercarpentier.com> (http://xaviercarpentier.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcarpentier/react-native-slack-webhook/issues"
+  },
+  "homepage": "https://github.com/xcarpentier/react-native-slack-webhook#readme"
+}
