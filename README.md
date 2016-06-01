@@ -39,7 +39,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-import Slack from './Slack';
+import Slack from 'react-native-slack-webhook';
 import {webhookURL} from './env';
 
 
