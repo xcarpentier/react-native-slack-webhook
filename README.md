@@ -84,6 +84,7 @@ AppRegistry.registerComponent('example', () => Example);
 
 - [@xcapentier](mailto:contact@xaviercarpentier.com) The main author.
 
+
 ## Questions
 
 Feel free to [contact me](mailto:contact@xaviercarpentier.com) or [create an issue](https://github.com/xcarpentier/react-native-slack-webhook/issues/new)
