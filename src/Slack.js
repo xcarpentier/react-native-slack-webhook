@@ -1,4 +1,9 @@
 'use strict';
+/**
+ * react-native-slack-webhook
+ * @author xcarpentier<contact@xaviercarpentier.com>
+ */
+
 // @flow
 
 type Payload = {
@@ -15,14 +20,18 @@ let defaultPayload = {
   'icon_emoji': ':iphone:'
 }
 
-const Slack = (webhookURL: string) => {
+class Slack  {
 
-  function request(payload: Payload = defaultPayload): Promise {
-    if (!webhookURL) {
+  constructor(webhookURL: string) {
+    this.webhookURL = webhookURL;
+  }
+
+  request(payload: Payload = defaultPayload): Promise {
+    if (!this.webhookURL) {
       throw new Error('Need a webhookURL!');
     }
     let body = `payload=${encodeURI(JSON.stringify(payload))}`;
-    return fetch(`${webhookURL}`, {
+    return fetch(`${this.webhookURL}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -31,6 +40,5 @@ const Slack = (webhookURL: string) => {
     });
   }
 };
-
 
 module.exports = Slack;
