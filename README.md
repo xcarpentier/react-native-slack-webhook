@@ -40,7 +40,7 @@ import {
 } from 'react-native';
 
 import Slack from 'react-native-slack-webhook';
-import {webhookURL} from './env';
+import { webhookURL } from './env';
 
 
 class example extends Component {
@@ -89,8 +89,8 @@ AppRegistry.registerComponent('example', () => example);
 
 This lib need a webhook url, details here : https://api.slack.com/incoming-webhooks.
 ```JavaScript
-let webhookURL = '<your webhook URL provided by Slack, ie. Incoming WebHooks>'
-let Slack = new Slack(webhookURL)
+const webhookURL = '<your webhook URL provided by Slack, ie. Incoming WebHooks>'
+const Slack = new Slack(webhookURL)
 ```
 ### Example
 
