@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('example', () => example);
 ```
 
-## Setup example
+## Setup
 
 ### Slack
 
