@@ -1,8 +1,8 @@
 {
   "name": "react-native-slack-webhook",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Follow some activities (new user, payment, etc.) from your app via Slack and this webhook lib",
-  "main": "src/index.js",
+  "main": "src/Slack.js",
   "scripts": {
     "test": "jest"
   },
