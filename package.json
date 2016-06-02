@@ -1,10 +1,10 @@
 {
   "name": "react-native-slack-webhook",
-  "version": "0.0.2",
-  "description": "Follow some activities (new user, payment, ...) from your app via Slack and this webhook lib ",
-  "main": "dist/index.js",
+  "version": "0.0.3",
+  "description": "Follow some activities (new user, payment, etc.) from your app via Slack and this webhook lib",
+  "main": "src/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --presets es2015,react"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "Slack",
+    "bot",
     "react-native"
   ],
   "author": "Xavier Carpentier <contact@xaviercarpentier.com> (http://xaviercarpentier.com/)",
@@ -21,9 +22,6 @@
   },
   "homepage": "https://github.com/xcarpentier/react-native-slack-webhook#readme",
   "devDependencies": {
-    "jest": "12.1.1",
-    "babel-cli": "6.9.0",
-    "babel-preset-es2015": "6.9.0",
-    "babel-preset-react": "6.5.0"
+    "jest": "12.1.1"
   }
 }

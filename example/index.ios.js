@@ -23,7 +23,7 @@ class example extends Component {
         <Text style={styles.welcome}>
           Welcome to react-native-slack-webhook!
         </Text>
-        <TouchableOpacity onPress={()=> new Slack(webhookURL).request({text: 'test'})}>
+        <TouchableOpacity onPress={()=> new Slack(webhookURL).post('Test', '#test')}>
           <Text style={styles.instructions}>
             Press it to send message
           </Text>

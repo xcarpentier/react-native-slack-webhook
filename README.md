@@ -4,7 +4,7 @@
 
 The best Slack bot for React Native.
 
-![](http://i.imgur.com/vE4LubH.gif?1)
+![](http://i.imgur.com/oSd0Odt.gifv)
 
 ### Installation
 ```bash
@@ -51,7 +51,7 @@ class example extends Component {
         <Text style={styles.welcome}>
           Welcome to react-native-slack-webhook!
         </Text>
-        <TouchableOpacity onPress={()=> new Slack(webhookURL).request({text: 'test'})}>
+        <TouchableOpacity onPress={()=> new Slack(webhookURL).post('Test', '#test')}>
           <Text style={styles.instructions}>
             Press it to send message
           </Text>
@@ -83,9 +83,34 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('example', () => example);
 ```
 
+## Setup example
+
+### Slack
+
+This lib need a webhook url, details here : https://api.slack.com/incoming-webhooks.
+```JavaScript
+let webhookURL = '<your webhook URL provided by Slack, ie. Incoming WebHooks>'
+let Slack = new Slack(webhookURL)
+```
+### Example
+
+Just provide a file name env.js at root of the example project, see the example/env.example.js file.
+
+## Payload object
+
+| Key | Type | Default | Description |
+| --- | --- |
+| channel | string | '#general' | The channel where you will post a message |
+| username | string | 'bot' | The username you will use to post the message  |
+| text | string | '<text is empty>' | The most important part, the message you will send |
+| 'icon_emoji' | string | ':iphone:' | The icon emoji with your message |
+
+
 ## Contribution
 
 - [@xcapentier](mailto:contact@xaviercarpentier.com) The main author.
+
+  PRs are welcome !
 
 ## Questions
 

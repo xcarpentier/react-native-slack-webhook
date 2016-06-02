@@ -7,29 +7,48 @@
 // @flow
 
 type Payload = {
-  channel: ?string;
-  username: ?string;
-  text: ?string;
-  'icon_emoji': ?string;
+  channel: ? string;
+  username: ? string;
+  text: ? string;
+  'icon_emoji': ? string;
 };
 
-let defaultPayload = {
-  channel: '#general',
-  username: 'bot',
-  text: '',
-  'icon_emoji': ':iphone:'
-}
+class Slack {
 
-class Slack  {
-
+  /**
+   * Represents a Slack bot.
+   * @constructor
+   * @param {string} webhookURL - see https://api.slack.com/incoming-webhooks.
+   */
   constructor(webhookURL: string) {
     this.webhookURL = webhookURL;
   }
 
-  request(payload: Payload = defaultPayload): Promise {
+  /*
+   * Post a message on Slack
+   * @param {string} text - The most important part, the message you will send
+   * @param {string} channel - The channel where you will post a message
+   * @param {string} username - The username you will use to post the message
+   * @param {string} emoji -  The icon emoji with your message
+   */
+  post(
+    text: string = '<text is empty>',
+    channel: string = '#general',
+    username: string = 'bot',
+    emoji: string = ':iphone:'
+  ): Promise {
+
     if (!this.webhookURL) {
       throw new Error('Need a webhookURL!');
     }
+
+    let payload: Payload = {
+      text,
+      channel,
+      username,
+      'icon_emoji' : emoji
+    };
+
     let body = `payload=${encodeURI(JSON.stringify(payload))}`;
     return fetch(`${this.webhookURL}`, {
       method: 'POST',
