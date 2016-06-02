@@ -42,14 +42,14 @@ class Slack {
       throw new Error('Need a webhookURL!');
     }
 
-    let payload: Payload = {
+    const payload: Payload = {
       text,
       channel,
       username,
       'icon_emoji' : emoji
     };
 
-    let body = `payload=${encodeURI(JSON.stringify(payload))}`;
+    const body = `payload=${encodeURI(JSON.stringify(payload))}`;
     return fetch(`${this.webhookURL}`, {
       method: 'POST',
       headers: {
