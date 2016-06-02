@@ -11,13 +11,12 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-import Slack from './Slack';
+import Slack from 'react-native-slack-webhook';
 import {webhookURL} from './env';
 
 
 class example extends Component {
   render() {
-
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
