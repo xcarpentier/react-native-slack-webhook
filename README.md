@@ -4,7 +4,7 @@
 
 The best Slack bot for React Native.
 
-![](http://i.imgur.com/oSd0Odt.gifv)
+![](http://i.imgur.com/oSd0Odt.gif)
 
 ### Installation
 ```bash
