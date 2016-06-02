@@ -99,7 +99,7 @@ Just provide a file name env.js at root of the example project, see the example/
 ## Payload object
 
 | Key | Type | Default | Description |
-| --- | --- |
+| --- | --- | --- | --- |
 | channel | string | '#general' | The channel where you will post a message |
 | username | string | 'bot' | The username you will use to post the message  |
 | text | string | '<text is empty>' | The most important part, the message you will send |
