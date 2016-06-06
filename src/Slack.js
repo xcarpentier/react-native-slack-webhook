@@ -50,7 +50,7 @@ class Slack {
     };
 
     const body = `payload=${encodeURI(JSON.stringify(payload))}`;
-    return fetch(`${this.webhookURL}`, {
+    return fetch(this.webhookURL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
