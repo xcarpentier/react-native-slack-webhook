@@ -55,7 +55,7 @@ class Slack {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       },
-      body: body
+      body
     });
   }
 };
