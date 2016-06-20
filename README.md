@@ -1,6 +1,5 @@
 # react-native-slack-webhook
 
-[![npm version](http://img.shields.io/npm/dm/react-native-slack-webhook.svg?style=flat-square)](https://npmjs.org/package/react-native-slack-webhook "View this project on npm")
 
 The best Slack bot for React Native.
 
