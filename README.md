@@ -11,6 +11,10 @@ Slack webhook for React-Native
 ```bash
 $ npm i react-native-slack-webhook --save
 ```
+or
+```bash
+$ yarn add react-native-slack-webhook
+```
 ### Basic Usage
 - Install `react-native` first
 
