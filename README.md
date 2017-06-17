@@ -1,7 +1,9 @@
+[![NPM version](https://badge.fury.io/js/react-native-slack-webhook.svg)](http://badge.fury.io/js/react-native-slack-webhook)
+[![Downloads](https://img.shields.io/npm/dm/react-native-slack-webhook.svg)](https://www.npmjs.com/package/react-native-slack-webhook)
+
 # react-native-slack-webhook
 
-
-The best Slack bot for React Native.
+Slack webhook for React-Native
 
 ![](http://i.imgur.com/oSd0Odt.gif)
 
