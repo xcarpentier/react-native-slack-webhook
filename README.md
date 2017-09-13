@@ -3,6 +3,8 @@
 
 # react-native-slack-webhook
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xcarpentier/react-native-slack-webhook.svg)](https://greenkeeper.io/)
+
 Slack webhook for React-Native
 
 ![](http://i.imgur.com/oSd0Odt.gif)
