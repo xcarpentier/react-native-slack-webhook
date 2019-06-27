@@ -125,3 +125,6 @@ YES
 Feel free to [contact me](mailto:contact@xaviercarpentier.com) or [create an issue](https://github.com/xcarpentier/react-native-slack-webhook/issues/new)
 
 > made with ♥
+
+## Hire an expert!
+Looking for a ReactNative freelance expert with more than 12 years experience? Contact me from my [website](https://xaviercarpentier.com)!
